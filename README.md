@@ -1,2 +1,2 @@
 # HTML-CSS
- Repositório de HTML5 e CSS3
+ Curso e repositório de HTML5 e CSS3
