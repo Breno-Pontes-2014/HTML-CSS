@@ -12,9 +12,16 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form>
-        <p>Digite seu nome: <input type="text" name="nome" id="nome"></p>
-        <p>Digite seu sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+    <form autocomplete="off" action="cadastrar.html">
+        <p><label for="inome">Digite seu nome:</label>
+            <input type="text" name="nome" id="inome"></p>
+
+        <p><label for="inomedomeio">Digite seu nome do meio: </label>
+            <input type="text" name="nomedomeio" id="inomedomeio"></p>
+        
+        <p><label for="isobrenome">Digite seu sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+
         <input type="submit" value="Enviar dados">
     </form>
 </body>
