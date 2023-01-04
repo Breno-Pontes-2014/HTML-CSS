@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastrar.html" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <p>
+                <input type="checkbox" name="efutebol" id="ifutebol"><label for="efutebol">Futebol </label>
+                <br>
+                <input type="checkbox" name="etênis" id="itênis"><label for="etênis">Tênis </label>
+                <br>
+                <input type="checkbox" name="ecriquete" id="icriquete"><label for="ecriquete">Criquete </label>
+                <br>
+                <input type="checkbox" name="etenisdemesa" id="itenisdemesa"><label for="etênisdemesa">Tênis de mesa </label>
+                <br>
+                <input type="checkbox" name="ehóquei" id="ihóquei"><label for="ehóquei">Hóquei </label>
+                <br>
+                <input type="checkbox" name="evôlei" id="ivôlei"><label for="evôlei">Vôlei</label>
+                <br>
+                <input type="checkbox" name="ebasquete" id="ibasquete"><label for="ebasquete">Basquete </label>
+                <br>
+                <input type="checkbox" name="enatação" id="inatação"><label for="enatação">Natação </label>
+                <br>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <p>
+                <input type="radio" name="ifem" id="Sexo"><label for="ifem" value="f">Feminino</label>
+                <input type="radio" name="imas" id="Sexo"><label for="imas" checked value="m">Masculino</label>
+                <input type="radio" name="inãodizer" id="Sexo"><label for="inãodizer" value="pnd">Prefiro não dizer</label>
+            </p>
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
