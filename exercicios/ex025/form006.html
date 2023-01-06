@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastrar.html" method="get" autocomplete="on">
+        <fieldset>
+            <legend>
+                Cores
+            </legend>
+            <p>
+                <label for="icor">Cor:</label>
+                <input type="color" name="cor" id="icor" required>
+            </p>
+            <p>
+                <label for="isatisfação" required>Satisfação:</label>
+                <input type="range" name="satisfação " id="isatisfação" min="0" max="10">
+            </p>
+            <p>
+                <label for="ifoto">Foto</label>
+                <input type="file" name="foto" id="ifoto" required>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
