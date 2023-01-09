@@ -1,0 +1,112 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form autocomplete="on" method = "post" action="cadastrar.html">
+        <p>
+            <label for="iestado">Estado: </label>
+            <select name="estado" id="iestado">
+                <option value="" selected>--Escolha--</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goias</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        </p>
+        <p>
+            <label for="Iprofissão">Profissão</label>
+            <input type="text" id="iprof" name="prof" list="opco">
+            <datalist id="opções ">
+                <option value="Selecionar">Advogado</option>
+
+                <option value="Selecionar">Arquiteto</option>
+
+                <option value="Selecionar"> Ator
+
+                <option value="Selecionar"> Atendente de farmácia </option>
+
+                <option value="Selecionar"> Bibliotecário </option>
+
+                <option value="Selecionar"> Cirurgião </option>
+
+                <option value="Selecionar"> Dentista </option>
+
+                <option value="Selecionar"> Designer </option>
+
+                <option value="Selecionar"> Enfermeiro </option>
+
+                <option value="Selecionar"> Engenheiro </option>
+
+                <option value="Selecionar"> Fisioterapeuta </option>
+
+                <option value="Selecionar"> Fotógrafo </option>
+
+                <option value="Selecionar"> Jornalista </option>
+
+                <option value="Selecionar"> Médico </option>
+
+                <option value="Selecionar"> Nutricionista </option>
+
+                <option value="Selecionar"> Professor </option>
+
+                <option value="Selecionar">Professor de dança</option>
+
+                <option value="Selecionar">Programador</option>
+
+                <option value="Selecionar"> Psicólogo </option>
+
+                <option value="Selecionar">Psicólogo clínico</option>
+
+                <option value="Selecionar"> Publicitário </option>
+
+                <option value="Selecionar">Quimico</option>
+
+                <option value="Selecionar"> Recepcionista </option>
+
+                <option value="Selecionar"> Vendedor </option>
+
+                <option value="Selecionar"> Veterinário </option>  
+            </datalist>
+<p>
+   <label for="Imensage"> Mensagem:</label> <br>
+   <textarea name="Mensagem" id="Imensagem" cols="30" rows="10"></textarea>
+</p>
+        
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">            
+        </p>
+    </form>
+</body>
+</html>
