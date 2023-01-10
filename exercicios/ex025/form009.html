@@ -1,0 +1,26 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form autocomplete="on" method = "post" action="cadastrar.html">
+        <p>
+            <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="valor.innerHTML = Number(valor)">
+            <label for="inum">Número: </label>
+            <output id="valor">5</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar dados">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form autocomplete="on" method = "post" action="cadastrar.html">
+        <p>
+            <label for="num1">Digite um número: </label>
+            <input type="number" name="inum1" id="num1" required oninput="soma.innerHTML = Number(inum1.value) + Number(inum2.value) ">
+        <p>
+            <label for="num2">Digite um número de novo: </label>
+            <input type="number" name="inum2" id="num2" required oninput="soma.innerHTML = Number(inum1.value) + Number(inum2.value) ">
+        </p>
+        <p>
+            <label for="num1">Soma: </label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+        </p>
+        <p>
+            <input type="submit" value="Enviar dados">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
