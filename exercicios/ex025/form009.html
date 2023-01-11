@@ -13,9 +13,12 @@
 <body>
     <form autocomplete="on" method = "post" action="cadastrar.html">
         <p>
-            <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="valor.innerHTML = Number(inum)">
-            <label for="inum">Número: </label>
-            <output id="valor"></output>
+            <label for="inum">Número:</label>
+            <input type="range" name="num" id="inum" min="0" max="5" value="3" oninput="ivalor.innerHTML = Number(inum.value)">
+            <output name="valor" id="ivalor"></output>
+        </p>
+        <p>
+
         </p>
         <p>
             <input type="submit" value="Enviar dados">
