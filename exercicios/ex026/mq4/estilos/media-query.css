@@ -1,5 +1,19 @@
 @charset "UTF-8";
-
+@media print {
+    body h1{
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    img#pc{display:none;}
+    img#celular{display: none;}
+    img#impressora{display: block;}
+    img#tablet{display: none;}
+    img#tv{display: none;}
+    img#computador{display: none;}
+    main{
+        border: 2px 2px 2px black;
+    }
+}
 @media screen and (min-width:768px) and (max-width:992px){
     body{
         background-image: url(../imagens/back-tablet.jpg);
