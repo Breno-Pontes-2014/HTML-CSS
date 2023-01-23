@@ -1,1 +1,38 @@
 @charset "UTF-8";
+width{}
+@media screen and (min-width:768px) and (max-width:992px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#pc{display:none;}
+    img#celular{display: none;}
+    img#impressora{display: none;}
+    img#tablet{display: block;}
+    img#tv{display: none;}
+    img#computador{display: none;}
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){
+        body{
+            background-image: url(../imagens/back-pc.jpg);
+        }
+        img#pc{display:block;}
+        img#celular{display: none;}
+        img#impressora{display: none;}
+        img#tablet{display: none;}
+        img#tv{display: none;}
+        img#computador{display: none;}
+    }
+@media screen and (min-width:1200px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#pc{display:none;}
+    img#celular{display: none;}
+    img#impressora{display: none;}
+    img#tablet{display: none;}
+    img#tv{display: block;}
+    img#computador{display: none;}
+}
+
