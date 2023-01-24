@@ -1,21 +1,35 @@
 @charset "UTF-8";
 body{
-    background-color: lightblue;
+    color: black;
+    background-color: rgb(241, 149, 149);
     font-family: Arial, Helvetica, sans-serif;
 }
 footer{
     text-align: center;
     background-color: black;
     color: white;
+
 }
 header{
-    background-color: lightgreen;
+    background-color: blue;
     text-align: center;
 }
 
 header a{
-    border: 1px 1px 1px black;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: rgb(64, 110, 64);
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+
+}
+header a:hover{
+    color: rgb(0, 255, 234);
+
+}
+header a:active{
+    color: rgb(255, 0, 0);
 }
