@@ -2,28 +2,51 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
-        <h1>Meus sites</h1>
-            <a href="https://breno-pontes-2014.github.io/Android/" target="_blank">Android</a>
-            <a href="https://breno-pontes-2014.github.io/Cordel/" target="_blank">Cordel</a>
-            <a href="https://breno-pontes-2014.github.io/Projeto-social/" target="_blank">Projeto Social</a>
-            <a href="https://breno-pontes-2014.github.io/HTML-CSS/exercicios/ex001/index.html" target="_blank">Meu 1º site </a>
+        <h1>Meu Sites</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="https://breno-pontes-2014.github.io/HTML-CSS/exercicios/ex001/index.html">1º site</a></li>
+                <li><a href="https://breno-pontes-2014.github.io/Android/">Android</a></li>
+                <li><a href="https://breno-pontes-2014.github.io/Cordel/">Cordel</a></li>
+                <li><a href="https://breno-pontes-2014.github.io/Projeto-social/">Redes social</a></li>
+            </ul>
+        </menu>
     </header>
     <main>
         <article>
-            <h1>Como aprendir a fazer sites</h1>
-            <p>Com o Curso de HTML5 e CSS3 do cursoemvideo aprendi CSS HTML e até um pouco de Javascript</p>
-            <p><a href="https://www.cursoemvideo.com/">Acessar cursoemvideo</a></p>
+            <h2>Como aprendir a fazer sites</h2>
+            <p>Simples! Com o curso de html5 e css3 do cursoemvideo ele é tão bom que aprendi ate um pouco de javascript</p>
+            <h3>Descrição do curso</h3>
+            <p>Matricule-se ou faça cadastro para ter acesso a aulas gratuitas com o professor <a href="https://github.com/gustavoguanabara">Gustavo Guanabara</a></p>
+            <p><a href="https://cursoemvideo.com">Acessar cursoemvideo</a></p>
         </article>
     </main>
-    <footer>
-        Site criado por <a href="https://github.com/Breno-Pontes-2014">Breno</a>
-    </footer>
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

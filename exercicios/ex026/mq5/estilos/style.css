@@ -1,35 +1,81 @@
 @charset "UTF-8";
-body{
-    color: black;
-    background-color: rgb(241, 149, 149);
+
+* {
     font-family: Arial, Helvetica, sans-serif;
-}
-footer{
-    text-align: center;
-    background-color: black;
-    color: white;
 
-}
-header{
-    background-color: blue;
-    text-align: center;
+    margin: 0px;
+    padding: 0px;
 }
 
-header a{
+body, html {
+    background-color: rgb(0, 151, 161);
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+i#burguer {
+    background-color: rgb(48, 48, 48);
     color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+i#burguer:hover {
+    background-color: white;
+    color: black;
+}
+
+menu {
+    display: none;
+}
+
+menu > ul {
+    text-align: center;
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
     text-decoration: none;
-    list-style: none;
-    padding: 5px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     transition: 0.5s;
-
+    border-radius: 10px;
+    text-align: center;
 }
-header a:hover{
-    color: rgb(0, 255, 234);
 
+menu > ul > li > a:hover {
+    background-color: rgb(4, 0, 255);
+    color: black;
 }
-header a:active{
-    color: rgb(255, 0, 0);
+
+main {
+    width: 90vw;
+    background-color: rgb(34, 248, 195);
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+article > h2 {
+    padding-bottom: 20px;
+}
+
+article > p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
 }
